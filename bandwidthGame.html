@@ -5,38 +5,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>bandwidth Game</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css"/>
         </head>
     <body>
-    <h1>Your current bandwidth is: </h1>
-    <h2> Your bandwidth bandwidth estimate is: </h2>
-        <input placeholder="Enter Number Here"> 
-    
+    <h1>Your current internet speed is: <h1 id="bandwidth"> </h1> </h1>
+    <h2> Your bandwidth estimate is: </h2>
+        
+    <input id="userMbs" placeholder="Enter Number Here"> 
+
     <br/> <br> 
 
-    <button type="button" class="button-option">
-        <span class="text">First Audio Recording</span> 
-    </button>
+    <div id="wrap">
 
-    <br/> <br/>
+        <button type="button" id="buttonOptionOne">
+            <span class="text">Most Bandwidth</span> 
+        </button>
+
+        <br/> <br/>
+
+        <button type="button" id="buttonOptionTwo">
+            <span class="text">Least Bandwidth</span>
+        </button>
     
-    <button type="button" class="button-option">
-        <span class="text">Second Audio Recording</span>
-    </button>
-    
+    </div>
+
+    <br> <br> 
+
+    <div>
+
+    <button id="btnStart">START RECORDING</button> 
+    <button id="btnStop">STOP RECORDING</button> 
+        
+    <br> <br>
+
+        <!--for record--> 
+        <audio controls></audio> 
+        <!--controls to  use for add  
+            play, pause, and volume--> 
+        
+        <!--for play the audio--> 
+        <audio id="adioPlay" controls></audio> 
+
+    </div>
+
     <br/> <br/>
 
     <div class="readyToListen">
-        <button class="btnListen">
+        <button id="btnListen">
             <span class="btn-text">I am ready to test my ears!</span>
             <span class="btn-icon">
                 <i class="fa fa-check fa-2x"></i>
         </span>
         </button>
-    <div class="loader" id="loader"></div>
+    <div class="loader"></div>
     </div>
 
     <br/> <br/>
+
+    <div class="answerWrapper"> 
+        <h1 id="incorrect"> Your ears are incorrect! </h1>
+        <h1 id="correct"> Your ears are correct! </h1>
+    </div>
 
     <script src="bandwidthGame.js"></script>
     </body>
