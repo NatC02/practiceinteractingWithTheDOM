@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>bandwidth Game</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css" />
+        </head>
     <body>
-        
-        <script src="bandwidthGame.js"></script>
+    <h1>Your current bandwidth is: </h1>
+    <h2> Your bandwidth bandwidth estimate is: </h2>
+        <input placeholder="Enter Number Here"> 
+    
+    <br/> <br> 
+
+    <button type="button" class="button-option">
+        <span class="text">First Audio Recording</span> 
+    </button>
+
+    <br/> <br/>
+    
+    <button type="button" class="button-option">
+        <span class="text">Second Audio Recording</span>
+    </button>
+    
+    <br/> <br/>
+
+    <div class="readyToListen">
+        <button class="btnListen">
+            <span class="btn-text">I am ready to test my ears!</span>
+            <span class="btn-icon">
+                <i class="fa fa-check fa-2x"></i>
+        </span>
+        </button>
+    <div class="loader" id="loader"></div>
+    </div>
+
+    <br/> <br/>
+
+    <script src="bandwidthGame.js"></script>
     </body>
 </html>
